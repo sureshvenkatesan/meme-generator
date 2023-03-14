@@ -91,8 +91,10 @@ python testdoctypes.py
 ```
 To become familiar with how to do relative import of Modules from another package ( and modify the Python Search path)
 please refer to :
-https://stackoverflow.com/questions/71215741/how-to-resolve-relative-import
-https://itsmycode.com/importerror-attempted-relative-import-with-no-known-parent-package/
+
+- https://stackoverflow.com/questions/71215741/how-to-resolve-relative-import
+
+- https://itsmycode.com/importerror-attempted-relative-import-with-no-known-parent-package/
 
 
 # MemeGenerator
