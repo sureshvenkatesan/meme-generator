@@ -75,8 +75,13 @@ in your web browser by navigating to that URL.
 
 This application uses the following packages : 
 # QuoteEngine
-This has python modules to ingest files in  different file formats like csv, docx, pdf , txt .
-These files containing quote(s) and their authors . The QuoteEngine implements a Strategy pattern to ingest
+This has python modules to ingest files in  different file formats like :
+- csv using CSVIngestor class that depends on pandas library
+- docx using DocxIngestor class that uses python-docx library 
+- pdf using PDFIngestor class that utilizes the subprocess module to call the **pdftotext** CLI utility 
+- txt using TextIngestor class.
+
+These input files contain quote(s) and their authors . The QuoteEngine implements a Strategy pattern to ingest
 any of these file types and  return a list of QuoteModel objects.
 QuoteModel  represent a quote with a body and author.
 
@@ -93,19 +98,17 @@ To become familiar with how to do relative import of Modules from another packag
 please refer to :
 
 - https://stackoverflow.com/questions/71215741/how-to-resolve-relative-import
-
 - https://itsmycode.com/importerror-attempted-relative-import-with-no-known-parent-package/
 
 
 # MemeGenerator
 This module creates a meme with specified dimensions by adding text and author to an image .
 
-
 It can be tested using the **meme.py** a python program that can  run from commandline takes three OPTIONAL arguments:
 
-A string quote body
-A string quote author
-An image path
+- A string quote body
+- A string quote author
+- An image path
 
 Common file exceptions are handled and  human-readable error messages are displayed.
 
