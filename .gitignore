@@ -1,4 +1,8 @@
 venv
 tmp/*
+!tmp/placeholder.txt
 static/*
+!static/placeholder.txt
 readme1.txt
+__pycache__
+.idea
