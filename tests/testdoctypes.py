@@ -13,7 +13,7 @@ from QuoteEngine import QuoteModel
 
 def process_pdf(path):
     # Run pdftotext command via subprocess call
-    output = subprocess.check_output(['pdftotext', '-layout', pdf_path, '-'])
+    output = subprocess.check_output(['pdftotext', '-layout', path, '-'])
 
     # Decode the output bytes to a string
     text = output.decode('utf-8')
@@ -64,7 +64,7 @@ def process_txt(path):
 
 
 if __name__ == "__main__":
-    # process_pdf('../_data/SimpleLines/SimpleLines.pdf')
-    # process_txt('../_data/SimpleLines/SimpleLines.txt')
-    # process_docx('../_data/SimpleLines/SimpleLines.docx')
+    process_pdf('../_data/SimpleLines/SimpleLines.pdf')
+    process_txt('../_data/SimpleLines/SimpleLines.txt')
+    process_docx('../_data/SimpleLines/SimpleLines.docx')
     process_csv('../_data/SimpleLines/SimpleLines.csv')

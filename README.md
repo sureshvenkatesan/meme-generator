@@ -45,11 +45,10 @@ pip install -r requirements.txt
 ## Usage
 
 To use the Meme Generator, run the `app.py` script as:
+
 a)
 ```commandline
 python app.py
-
-
 ```
 
 This will start the Flask application on `http://localhost:5000`. You can then access the application 
@@ -83,11 +82,18 @@ QuoteModel  represent a quote with a body and author.
 
 Common file exceptions are handled and  human-readable error messages are displayed.
 
-The **"tests"** folders has some python programs that test the **QuoteModel** and **Ingestor** .
+The **"tests"** folders has some python programs that can be run from commandline to
+test the **QuoteModel** and **Ingestor** .
+```commandline
+cd tests
+python test.py
+python testdoctypes.py
+```
 To become familiar with how to do relative import of Modules from another package ( and modify the Python Search path)
 please refer to :
 https://stackoverflow.com/questions/71215741/how-to-resolve-relative-import
 https://itsmycode.com/importerror-attempted-relative-import-with-no-known-parent-package/
+
 
 # MemeGenerator
 This module creates a meme with specified dimensions by adding text and author to an image .
