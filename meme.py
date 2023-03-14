@@ -77,8 +77,5 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-# example usage:
-# python meme.py --body "This is a quote" --author "Author Name"
-# python meme.py --path "/Users/sureshv/PycharmProjects/pythonProject/cropimage/src/_data/photos/dog/xander_4.jpg"
-# python meme.py --path "/Users/sureshv/PycharmProjects/pythonProject/cropimage/src/_data/photos/dog/xander_4.jpg" --body "to be or not to be" --author "shakes"
+
     print(generate_meme(args.path, args.body, args.author))
